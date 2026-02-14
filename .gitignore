@@ -1,0 +1,30 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# dbt
+dbt/**/target/
+dbt/**/dbt_packages/
+dbt/**/logs/
+
+# DuckDB database files (local state)
+warehouse/*.duckdb
+warehouse/*.db
+*.duckdb
+*.db
+
+# Data outputs (generated)
+data/raw/*.csv
+data/processed/*
+*.parquet
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+
+# VS Code (keep settings if you want later)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
